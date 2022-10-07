@@ -1,4 +1,4 @@
-# Data import modules
+# Data import
 import requests 
 from urllib.parse import urlencode
 
@@ -12,10 +12,10 @@ def get_data_ya_disk(data_keys):
         - list of download urls
     """
     
-    # Базовый url для загрузки данных
+    # Base url
     ya_disk_url = 'https://cloud-api.yandex.net/v1/disk/public/resources/download?' 
     
-    # Ссылки на скачивание
+    # Direct URLs to the files
     download_urls = []
     
     for k in data_keys:
